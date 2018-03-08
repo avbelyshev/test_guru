@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  user: one
+  test: one
+  correct_answers: 1
+  passed: false
+
+two:
+  user: two
+  test: two
+  correct_answers: 1
+  passed: false
