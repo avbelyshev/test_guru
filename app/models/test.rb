@@ -2,6 +2,8 @@ class Test < ApplicationRecord
   belongs_to :category
   has_many :test_passages
   has_many :users, through: :test_passages
+  has_many :questions
+  belongs_to :author, class_name: 'User'
 
   def self.tests_by_category(category)
     joins(:category).where(categories: { title: category }).order(title: :desc).pluck(:title)
