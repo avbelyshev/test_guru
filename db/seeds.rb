@@ -5,14 +5,16 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+user = User.create(name: 'user', email: 'user@test-guru.ru')
+
 categories = Category.create([{title: 'Ruby'}, {title: 'Ruby on Rails'}, {title: 'SQL'}])
 
 tests = Test.create([
-  {title: 'Основы Ruby', level: 0, category_id: categories.fetch(0).id},
-  {title: 'Классы и методы', level: 0, category_id: categories.fetch(0).id},
-  {title: 'Метапрограммирование', level: 1, category_id: categories.fetch(0).id},
-  {title: 'Структура Rails приложения', level: 1, category_id: categories.fetch(1).id},
-  {title: 'Операции CRUD', level: 0, category_id: categories.fetch(2).id}
+  {title: 'Основы Ruby', level: 0, category_id: categories.fetch(0).id, author_id: user.id},
+  {title: 'Классы и методы', level: 0, category_id: categories.fetch(0).id, author_id: user.id},
+  {title: 'Метапрограммирование', level: 1, category_id: categories.fetch(0).id, author_id: user.id},
+  {title: 'Структура Rails приложения', level: 1, category_id: categories.fetch(1).id, author_id: user.id},
+  {title: 'Операции CRUD', level: 0, category_id: categories.fetch(2).id, author_id: user.id}
 ])
 
 questions = Question.create([
@@ -40,8 +42,6 @@ Answer.create([
   {body: 'UPDATE', correct: false, question_id: questions.fetch(4).id},
   {body: 'SELECT', correct: false, question_id: questions.fetch(4).id}
 ])
-
-user = User.create(name: 'user', email: 'user@test-guru.ru')
 
 TestPassage.create([
   {user: user, test: tests.fetch(0), correct_answers: 2},
