@@ -6,17 +6,16 @@ class SessionsController < ApplicationController
 
     if user&.authenticate(params[:password])
       session[:user_id] = user.id
-      session[:initial_page] ||= root_path
-      redirect_to session[:initial_page]
+      redirect_to session[:initial_page] || root_path, notice: 'You have successfully logged in'
     else
       flash.now[:alert] = 'Are you a Guru? Verify your Email and Password please'
       render :new
     end
   end
 
-  def destroy
+  def delete
     session[:user_id] = nil
     session[:initial_page] = nil
-    redirect_to login_path
+    redirect_to login_path, notice: 'Ah, why did you log out :('
   end
 end

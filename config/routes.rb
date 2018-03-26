@@ -3,12 +3,9 @@ Rails.application.routes.draw do
 
   root to: 'tests#index'
 
-  get 'users/new'
-  get 'sessions/new'
-
   get :signup, to: 'users#new'
   get :login, to: 'sessions#new'
-  get :logout, to: 'sessions#destroy'
+  delete :logout, to: 'sessions#delete'
 
   resources :users, only: :create
   resources :sessions, only: :create
