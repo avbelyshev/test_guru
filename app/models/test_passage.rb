@@ -22,7 +22,7 @@ class TestPassage < ApplicationRecord
   end
 
   def right_answers_percent
-    (correct_answers / number_of_questions) * 100
+    (correct_answers.to_f / number_of_questions * 100.00).to_i
   end
 
   def completed?
@@ -30,7 +30,7 @@ class TestPassage < ApplicationRecord
   end
 
   def passed_successfully?
-    true if right_answers_percent >= SUCCESS_RATE
+    right_answers_percent >= SUCCESS_RATE
   end
 
   private

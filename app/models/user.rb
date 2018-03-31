@@ -21,4 +21,17 @@ class User < ApplicationRecord
   def test_passage(test)
     test_passages.order(id: :desc).find_by(test_id: test.id)
   end
+
+  def admin?
+    is_a?(Admin)
+  end
+
+  def to_s
+    full_name = first_name.to_s
+    full_name += " #{last_name}" if last_name.to_s.present?
+    full_name += " (#{name})" if full_name.to_s.present? && name.to_s.present?
+    full_name = name if full_name.to_s.empty?
+    full_name = email if full_name.to_s.empty?
+    full_name
+  end
 end
