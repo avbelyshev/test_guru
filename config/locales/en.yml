@@ -21,6 +21,12 @@ en:
   tests:
     index:
       header: "Tests list"
+      title: "Title"
+      level: "Level"
+      questions: "Questions"
+      actions: "Actions"
+    test:
+      start: "Start"
 
   test_passages:
     result:
@@ -32,7 +38,51 @@ en:
         success: "Test was successfully created."
       index:
         header: "Tests list"
+        title: "Title"
+        level: "Level"
+        questions: "Questions"
+        actions: "Actions"
+        new_test: "Create Test"
+      show:
+        title: "Title"
+        level: "Level"
+        questions: "Questions"
+        actions: "Actions"
+        new_question: "Create New Question"
+        edit: "Edit"
+        back: "Back"
+        body: "Body"
+      new:
+        header: "Create New Test"
+        back: "Back"
+      edit:
+        header: "Edit %{title} test"
+        back: "Back"
+      test:
+        show: "Show"
+        edit: "Edit"
+        delete: "Delete"
+        delete_confirm: "Are you sure?"
+
+    questions:
+      question:
+        show: "Show"
+        edit: "Edit"
+        delete: "Delete"
+        delete_confirm: "Are you sure?"
+
+    answers:
+      answer:
+        show: "Show"
+        edit: "Edit"
+        delete: "Delete"
+        delete_confirm: "Are you sure?"
 
   test_mailer:
     completed_test:
       subject: "You just completed the TestGuru test!"
+
+  users:
+    sessions:
+      create:
+        welcome: "Welcome"

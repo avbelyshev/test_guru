@@ -23,6 +23,12 @@ ru:
   tests:
     index:
       header: "Доступные Тесты"
+      title: "Название"
+      level: "Уровень"
+      questions: "Вопросов"
+      actions: "Действия"
+    test:
+      start: "Старт"
 
   test_passages:
     result:
@@ -34,7 +40,51 @@ ru:
         success: "Тест успешно создан."
       index:
         header: "Доступные Тесты"
+        title: "Название"
+        level: "Уровень"
+        questions: "Вопросов"
+        actions: "Действия"
+        new_test: "Создать тест"
+      show:
+        title: "Название"
+        level: "Уровень"
+        questions: "Вопросов"
+        actions: "Действия"
+        new_question: "Создать новый вопрос"
+        edit: "Редактировать"
+        back: "Назад"
+        body: "Содержание"
+      new:
+        header: "Создать тест"
+        back: "Назад"
+      edit:
+        header: "Редактировать %{title} тест"
+        back: "Назад"
+      test:
+        show: "Показать"
+        edit: "Редактировать"
+        delete: "Удалить"
+        delete_confirm: "Вы уверены?"
+
+    questions:
+      question:
+        show: "Показать"
+        edit: "Редактировать"
+        delete: "Удалить"
+        delete_confirm: "Вы уверены?"
+
+    answers:
+      answer:
+        show: "Показать"
+        edit: "Редактировать"
+        delete: "Удалить"
+        delete_confirm: "Вы уверены?"
 
   test_mailer:
     completed_test:
       subject: "Вы успешно завершили тест на TestGuru!"
+
+  users:
+    sessions:
+      create:
+        welcome: "Добро пожаловать"
