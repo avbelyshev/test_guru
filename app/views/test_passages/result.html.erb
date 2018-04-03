@@ -1,8 +1,13 @@
 <h1><%= t('.header', title: @test_passage.test.title) %></h1>
-  <h3>Your result:</h3>
+  <h3><%= t('.result')%>:</h3>
 
   <p>
-    <span class='<%=result_color(@test_passage)%>'><%=result_message(@test_passage)%></span>
+    <span class='<%= result_color(@test_passage) %>'>
+      <%= t('.answers', count: @test_passage.correct_answers) %>
+      <%= t('.questions', count: @test_passage.number_of_questions) %>
+      <%= "(#{@test_passage.right_answers_percent}%)" %>
+      <%= @test_passage.passed_successfully? ? t('.positive') : t('.negative') %>
+    </span>
   </p>
 
-<%= link_to 'Back to tests list', tests_path %>
+<%= link_to t('.back'), tests_path %>

@@ -31,6 +31,16 @@ en:
   test_passages:
     result:
       header: "The %{title} Test was Completed!"
+      result: 'Result'
+      back: 'Back'
+      answers:
+        one: "%{count} correct answer"
+        other: "%{count} correct answers"
+      questions:
+        one: "to %{count} question"
+        other: "to %{count} questions"
+      positive: "The test is passed successfully!"
+      negative: "The test is failed!"
 
   admin:
     tests:

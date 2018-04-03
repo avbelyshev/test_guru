@@ -33,6 +33,20 @@ ru:
   test_passages:
     result:
       header: "Тест %{title} успешно завершён!"
+      result: 'Результат'
+      back: 'Назад'
+      answers:
+        few: "%{count} правильных ответа"
+        many: "%{count} правильных ответов"
+        one: "%{count} правильный ответ"
+        other: "%{count} правильных ответа"
+      questions:
+        few: "на %{count} вопроса"
+        many: "на %{count} вопросов"
+        one: "на %{count} вопрос"
+        other: "на %{count} вопроса"
+      positive: "Тест успешно пройден!"
+      negative: "Тест не пройден!"
 
   admin:
     tests:
