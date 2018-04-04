@@ -121,7 +121,7 @@ en:
         header: "Create new answer"
         back: "Back"
       edit:
-        header: "Edit %{title} answer"
+        header: "Edit answer"
         back: "Back"
       answer:
         show: "Show"

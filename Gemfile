@@ -33,7 +33,7 @@ gem 'jbuilder', '~> 2.5'
 gem 'devise', '~> 4.0'
 # Localization
 gem 'rails-i18n', '~> 5.0.0'
-
+gem 'devise-i18n'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 

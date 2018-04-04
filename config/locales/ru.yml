@@ -127,7 +127,7 @@ ru:
         header: "Создать ответ"
         back: "Назад"
       edit:
-        header: "Редактировать %{title} ответ"
+        header: "Редактировать ответ"
         back: "Назад"
       answer:
         show: "Показать"
