@@ -22,6 +22,8 @@ ru:
       answer:
         body: "Содержание"
         correct: "Правильный"
+    select:
+      prompt: "Выберите:"
 
   shared:
     errors:
