@@ -6,11 +6,22 @@ ru:
       test:
         create: "Создать Тест"
         update: "Обновить Тест"
+      question:
+        create: "Создать Вопрос"
+        update: "Обновить Вопрос"
+      answer:
+        create: "Создать Ответ"
+        update: "Обновить Ответ"
     label:
       test:
         title: "Название"
         level: "Уровень"
         category_id: "Категория"
+      question:
+        body: "Содержание"
+      answer:
+        body: "Содержание"
+        correct: "Правильный"
 
   shared:
     errors:
@@ -19,6 +30,12 @@ ru:
         many: "Обнаружено %{count} ошибок"
         one: "Обнаружена %{count} ошибка"
         other: "Обнаружено %{count} ошибки"
+    header:
+      welcome: "Добро пожаловать"
+      guru: "Гуру"
+      logout: "Выйти"
+      signup: "Зарегистрироваться"
+      login: "Войти"
 
   tests:
     index:
@@ -81,6 +98,18 @@ ru:
         delete_confirm: "Вы уверены?"
 
     questions:
+      show:
+        header: "%{test_title} Вопрос"
+        answers: "Ответы"
+        new_answer: "Создать ответ"
+        edit: "Редактировать"
+        back: "Назад"
+      new:
+        header: "Создать %{test_title} вопрос"
+        back: "Назад"
+      edit:
+        header: "Редактировать %{test_title} вопрос"
+        back: "Назад"
       question:
         show: "Показать"
         edit: "Редактировать"
@@ -88,11 +117,29 @@ ru:
         delete_confirm: "Вы уверены?"
 
     answers:
+      show:
+        question: "Вопрос"
+        answer: "Ответ"
+        correct: "Правильный"
+        edit: "Редактировать"
+        back: "Назад"
+      new:
+        header: "Создать ответ"
+        back: "Назад"
+      edit:
+        header: "Редактировать %{title} ответ"
+        back: "Назад"
       answer:
         show: "Показать"
         edit: "Редактировать"
         delete: "Удалить"
         delete_confirm: "Вы уверены?"
+
+    header:
+      header: "Панель администратора TestGuru"
+      welcome: "Добро пожаловать"
+      guru: "Гуру"
+      logout: "Выйти"
 
   test_mailer:
     completed_test:
@@ -101,4 +148,4 @@ ru:
   users:
     sessions:
       create:
-        welcome: "Добро пожаловать"
+        welcome: "Добро пожаловать, %{user_name}"

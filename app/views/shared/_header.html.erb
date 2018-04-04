@@ -5,11 +5,11 @@
 
   <div class="nav user">
   <% if user_signed_in? %>
-    Welcome, <b><%= current_user.email %></b> Guru |
-    <%= link_to 'Logout', destroy_user_session_path, method: :delete %>
+      <%= t('.welcome') %>, <b><%= current_user.email %></b> <%= t('.guru') %> |
+    <%= link_to t('.logout'), destroy_user_session_path, method: :delete %>
   <% else %>
-    <%= link_to 'Signup', new_user_registration_path %>
-    <%= link_to 'Login', new_user_session_path %>
+    <%= link_to  t('.signup'), new_user_registration_path %>
+    <%= link_to  t('.login'), new_user_session_path %>
   <% end %>
   </div>
 </div>

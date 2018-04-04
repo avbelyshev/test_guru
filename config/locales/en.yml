@@ -6,17 +6,34 @@ en:
       test:
         create: "Create Test"
         update: "Update Test"
+      question:
+        create: "Create Question"
+        update: "Update Question"
+      answer:
+        create: "Create Answer"
+        update: "Update Answer"
     label:
       test:
         title: "Title"
         level: "Level"
         category_id: "Category"
+      question:
+        body: "Body"
+      answer:
+        body: "Body"
+        correct: "Correct"
 
   shared:
     errors:
       header:
         one: "%{count} error detected"
         other: "%{count} errors detected"
+    header:
+      welcome: "Welcome"
+      guru: "Guru"
+      logout: "Logout"
+      signup: "Sign up"
+      login: "Login"
 
   tests:
     index:
@@ -75,6 +92,18 @@ en:
         delete_confirm: "Are you sure?"
 
     questions:
+      show:
+        header: "%{test_title} Question"
+        answers: "Answers"
+        new_answer: "Create New Answer"
+        edit: "Edit"
+        back: "Back"
+      new:
+        header: "Create new %{test_title} Question"
+        back: "Back"
+      edit:
+        header: "Edit %{test_title} Question"
+        back: "Back"
       question:
         show: "Show"
         edit: "Edit"
@@ -82,11 +111,29 @@ en:
         delete_confirm: "Are you sure?"
 
     answers:
+      show:
+        question: "Question"
+        answer: "Answer"
+        correct: "Correct"
+        edit: "Edit"
+        back: "Back"
+      new:
+        header: "Create new answer"
+        back: "Back"
+      edit:
+        header: "Edit %{title} answer"
+        back: "Back"
       answer:
         show: "Show"
         edit: "Edit"
         delete: "Delete"
         delete_confirm: "Are you sure?"
+
+    header:
+      header: "TestGuru Admin Panel"
+      welcome: "Welcome"
+      guru: "Guru"
+      logout: "Logout"
 
   test_mailer:
     completed_test:
@@ -95,4 +142,4 @@ en:
   users:
     sessions:
       create:
-        welcome: "Welcome"
+        welcome: "Welcome, %{user_name}"
