@@ -2,11 +2,12 @@
   <td><%= test.title %></td>
   <td><%= test_level(test) %></td>
   <td align="center"><%= test.questions.count %></td>
-  <td><%= link_to t('.show'), admin_test_path(test) %></td>
-  <td><%= link_to t('.edit'), edit_admin_test_path(test) %></td>
-  <td><%= link_to t('.delete'),
+  <td><%= button_to t('.show'), admin_test_path(test), class: "btn btn-primary", method: :get %></td>
+  <td><%= button_to t('.edit'), edit_admin_test_path(test), class: "btn btn-warning", method: :get %></td>
+  <td><%= button_to t('.delete'),
                   admin_test_path(test),
                   method: :delete,
-                  data: { confirm: t('.delete_confirm') } %>
+                  data: { confirm: t('.delete_confirm') },
+                  class: "btn btn-danger" %>
   </td>
 </tr>
