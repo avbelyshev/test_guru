@@ -1,9 +1,9 @@
 module ApplicationHelper
   FLASH_CLASS = {
-    error: 'alert alert-danger',
-    alert: 'alert alert-warning',
-    notice: 'alert alert-info',
-    success: 'alert alert-success'
+    error: 'danger',
+    alert: 'warning',
+    notice: 'info',
+    success: 'success'
   }.freeze
 
   def current_year
@@ -15,7 +15,7 @@ module ApplicationHelper
   end
 
   def flash_class(key)
-    FLASH_CLASS[key]
+    "alert alert-#{FLASH_CLASS[key]}"
   end
 
   def flash_messages
