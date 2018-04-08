@@ -19,10 +19,11 @@ class TestPassagesController < ApplicationController
 
   def gist
     service = GistQuestionService.new(@test_passage.current_question)
-    service.call
+    result = service.call
+    gist_link = helpers.link_to 'Gist', result.html_url, target: :blank
 
     flash_options = if service.gist_created?
-                      { notice: t('.success') }
+                      { notice: t('.success', gist_link: gist_link) }
                     else
                       { alert: t('.failure') }
                     end

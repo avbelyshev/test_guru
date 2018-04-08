@@ -20,7 +20,7 @@ module ApplicationHelper
 
   def flash_messages
     flash.map do |key, message|
-      content_tag :div, message, class: flash_class(key.to_sym), role: 'alert'
+      content_tag :div, message.html_safe, class: flash_class(key.to_sym), role: 'alert'
     end.join.html_safe
   end
 end

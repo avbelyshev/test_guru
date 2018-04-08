@@ -67,7 +67,7 @@ ru:
       positive: "Тест успешно пройден!"
       negative: "Тест не пройден!"
     gist:
-      success: "Gist успешно сохранён"
+      success: "Gist успешно сохранён, ссылка: %{gist_link}"
       failure: "Во время сохранения gist произошла ошибка"
 
   admin:

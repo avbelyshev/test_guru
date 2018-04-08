@@ -59,7 +59,7 @@ en:
       positive: "The test is passed successfully!"
       negative: "The test is failed!"
     gist:
-      success: "Gist successfully saved"
+      success: "Gist successfully saved, link: %{gist_link}"
       failure: "An error occurred while saving gist"
 
   admin:
