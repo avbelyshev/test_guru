@@ -142,11 +142,19 @@ ru:
         delete: "Удалить"
         delete_confirm: "Вы уверены?"
 
+    gists:
+      index:
+        header: "Список Gists"
+        question: "Вопрос"
+        user: "Пользователь"
+        url: "Ссылка"
+
     header:
       header: "Панель администратора TestGuru"
       welcome: "Добро пожаловать"
       guru: "Гуру"
       logout: "Выйти"
+      gists: "Список Gists"
 
   test_mailer:
     completed_test:

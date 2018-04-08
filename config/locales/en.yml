@@ -134,11 +134,19 @@ en:
         delete: "Delete"
         delete_confirm: "Are you sure?"
 
+    gists:
+      index:
+        header: "Gists list"
+        question: "Question"
+        user: "User"
+        url: "Url"
+
     header:
       header: "TestGuru Admin Panel"
       welcome: "Welcome"
       guru: "Guru"
       logout: "Logout"
+      gists: "Gists list"
 
   test_mailer:
     completed_test:
