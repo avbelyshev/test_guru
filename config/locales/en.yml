@@ -62,6 +62,8 @@ en:
       success: "Gist successfully saved, link: %{gist_link}"
       failure: "An error occurred while saving gist"
 
+  gist_description: "A question about %{test_title} from TestGuru"
+
   admin:
     tests:
       create:

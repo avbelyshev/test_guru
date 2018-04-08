@@ -70,6 +70,8 @@ ru:
       success: "Gist успешно сохранён, ссылка: %{gist_link}"
       failure: "Во время сохранения gist произошла ошибка"
 
+  gist_description: "Вопрос про %{test_title} от TestGuru"
+
   admin:
     tests:
       create:
