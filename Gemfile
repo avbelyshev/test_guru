@@ -44,6 +44,7 @@ gem 'bootstrap', '~> 4.0.0.beta'
 # NETWORKING
 
 gem 'faraday'
+gem 'octokit', '~> 4.0'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
