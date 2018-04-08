@@ -58,6 +58,9 @@ en:
         other: "to %{count} questions"
       positive: "The test is passed successfully!"
       negative: "The test is failed!"
+    gist:
+      success: "Gist successfully saved"
+      failure: "An error occurred while saving gist"
 
   admin:
     tests:

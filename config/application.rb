@@ -20,5 +20,7 @@ module TestGuru
     config.i18n.fallbacks = [:en]
 
     config.time_zone = 'Moscow'
+
+    config.autoload_paths << "#{Rails.root}/lib/clients"
   end
 end

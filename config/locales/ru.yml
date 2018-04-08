@@ -66,6 +66,9 @@ ru:
         other: "на %{count} вопроса"
       positive: "Тест успешно пройден!"
       negative: "Тест не пройден!"
+    gist:
+      success: "Gist успешно сохранён"
+      failure: "Во время сохранения gist произошла ошибка"
 
   admin:
     tests:
