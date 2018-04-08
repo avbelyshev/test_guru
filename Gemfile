@@ -46,6 +46,8 @@ gem 'bootstrap', '~> 4.0.0.beta'
 gem 'faraday'
 gem 'octokit', '~> 4.0'
 
+gem 'dotenv-rails', groups: [:development, :test]
+
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
