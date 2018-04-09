@@ -22,7 +22,7 @@ class TestPassagesController < ApplicationController
     service = GistQuestionService.new(question)
     result = service.call
 
-    gist_link = helpers.link_to 'Gist', result.html_url, target: :blank
+    gist_link = helpers.link_to('Gist', result.html_url, target: :blank)
 
     if service.gist_created?
       current_user.gists.create(question: question, gist_url: result.html_url)
