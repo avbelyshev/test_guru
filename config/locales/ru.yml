@@ -66,6 +66,11 @@ ru:
         other: "на %{count} вопроса"
       positive: "Тест успешно пройден!"
       negative: "Тест не пройден!"
+    gist:
+      success: "Gist успешно сохранён, ссылка: %{gist_link}"
+      failure: "Во время сохранения gist произошла ошибка"
+
+  gist_description: "Вопрос про %{test_title} от TestGuru"
 
   admin:
     tests:
@@ -137,11 +142,19 @@ ru:
         delete: "Удалить"
         delete_confirm: "Вы уверены?"
 
+    gists:
+      index:
+        header: "Список Gists"
+        question: "Вопрос"
+        user: "Пользователь"
+        url: "Ссылка"
+
     header:
       header: "Панель администратора TestGuru"
       welcome: "Добро пожаловать"
       guru: "Гуру"
       logout: "Выйти"
+      gists: "Список Gists"
 
   test_mailer:
     completed_test:

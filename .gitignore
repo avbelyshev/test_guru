@@ -22,4 +22,6 @@
 
 .byebug_history
 
+.env
+
 .idea
