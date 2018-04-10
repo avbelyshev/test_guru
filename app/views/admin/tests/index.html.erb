@@ -2,7 +2,11 @@
 <%= button_to t('.new_test'), new_admin_test_path, class: "btn btn-success mb-2", method: :get %>
 <table class="table table-striped table-bordered">
   <thead class="thead-dark" align="center">
-    <th><%= t('.title') %></th>
+    <th class="sort-by-title pointer">
+      <%= t('.title') %>
+      <%= octicon 'arrow-up', class: 'text-success hide' %>
+      <%= octicon 'arrow-down', class: 'text-success hide' %>
+    </th>
     <th><%= t('.level') %></th>
     <th><%= t('.questions') %></th>
     <th colspan="3"><%= t('.actions') %></th>
