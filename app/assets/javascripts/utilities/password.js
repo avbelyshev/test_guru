@@ -14,4 +14,9 @@ function passwordConfirmationCheck() {
     document.querySelector('.octicon-check').classList.add('hide')
     document.querySelector('.octicon-alert').classList.remove('hide')
   }
+
+  if (!this.value.length) {
+    document.querySelector('.octicon-check').classList.add('hide')
+    document.querySelector('.octicon-alert').classList.add('hide')
+  }
 }
