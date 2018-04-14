@@ -1,5 +1,9 @@
 <h1><%= t('.header') %></h1>
+
 <%= button_to t('.new_test'), new_admin_test_path, class: "btn btn-success mb-2", method: :get %>
+
+<%= render 'shared/errors', resource: @test %>
+
 <table class="table table-bordered">
   <thead class="thead-light" align="center">
     <th class="sort-by-title pointer">

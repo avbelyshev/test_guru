@@ -23,4 +23,8 @@ module ApplicationHelper
       content_tag :div, message.html_safe, class: flash_class(key.to_sym), role: 'alert'
     end.join.html_safe
   end
+
+  def page_lang
+    "lang=#{I18n.locale}"
+  end
 end
