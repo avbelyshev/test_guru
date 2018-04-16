@@ -1,6 +1,8 @@
 <h1><%= t('.header', title: @test_passage.test.title) %></h1>
   <h3><%= t('.result')%>:</h3>
 
+  <%= render 'progress_bar' %>
+
   <p>
     <span class='<%= result_color(@test_passage) %>'>
       <%= t('.answers', count: @test_passage.correct_answers) %>
