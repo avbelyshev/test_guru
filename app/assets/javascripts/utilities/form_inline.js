@@ -42,5 +42,7 @@ function formInlineHandler(testId) {
   $formInline.toggle()
   $testTitle.toggle()
 
-  link.value = $formInline.is(':visible') ? cancel_text : edit_text
+  if (link) {
+    link.value = $formInline.is(':visible') ? cancel_text : edit_text
+  }
 }
