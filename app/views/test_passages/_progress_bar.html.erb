@@ -1,0 +1,10 @@
+<div class="progress" style="height: 25px">
+  <% question_count = @test_passage.number_of_questions %>
+  <% question_number = @test_passage.current_question ? @test_passage.current_question_number : question_count + 1 %>
+  <%= content_tag :div,
+                  '0%',
+                  class: 'progress-bar progress-bar-animated',
+                  role: 'progressbar',
+                  data: { question_number: question_number,
+                          questions_count: question_count } %>
+</div>
