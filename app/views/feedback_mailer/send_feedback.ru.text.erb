@@ -1,0 +1,6 @@
+Привет! Новый отзыв от пользователя Test-Guru
+
+<% user = @feedback.user %>
+От: <%= "#{user.first_name} #{user.last_name} (#{user.email})" %>
+Тема: <%= @feedback.title %>
+Сообщение: <%= @feedback.body %>

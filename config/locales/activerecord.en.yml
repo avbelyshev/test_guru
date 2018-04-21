@@ -5,6 +5,7 @@ en:
       question: "Question"
       answer: "Answer"
       category: "Category"
+      feedback: "Feedback"
 
     attributes:
       test:
@@ -16,6 +17,9 @@ en:
       answer:
         body: "Body"
         correct: "Correct"
+      feedback:
+        title: "Title"
+        body: "Body"
 
     errors:
       messages:

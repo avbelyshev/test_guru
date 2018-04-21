@@ -1,0 +1,6 @@
+Hello! New feedback from Test-Guru
+
+<% user = @feedback.user %>
+From: <%= "#{user.first_name} #{user.last_name} (#{user.email})" %>
+Title: <%= @feedback.title %>
+Message: <%= @feedback.body %>
