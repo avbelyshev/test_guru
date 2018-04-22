@@ -5,6 +5,7 @@ ru:
       question: "Вопрос"
       answer: "Ответ"
       category: "Категория"
+      feedback: "Отзыв"
 
     attributes:
       test:
@@ -16,6 +17,9 @@ ru:
       answer:
         body: "Содержание"
         correct: "Правильный"
+      feedback:
+        title: "Тема"
+        body: "Сообщение"
 
     errors:
       messages:

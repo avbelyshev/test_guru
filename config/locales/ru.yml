@@ -12,6 +12,8 @@ ru:
       answer:
         create: "Создать Ответ"
         update: "Обновить Ответ"
+      feedback:
+        create: "Отправить"
     label:
       test:
         title: "Название"
@@ -38,6 +40,7 @@ ru:
       logout: "Выйти"
       signup: "Зарегистрироваться"
       login: "Войти"
+      feedback: "Обратная связь"
 
   tests:
     index:
@@ -71,6 +74,14 @@ ru:
       failure: "Во время сохранения gist произошла ошибка"
 
   gist_description: "Вопрос про %{test_title} от TestGuru"
+
+  feedbacks:
+    new:
+      header: "Отправить отзыв"
+      back: "Назад"
+    create:
+      success: "Сообщение успешно отправлено"
+      failure: "Не удалось отправить сообщение"
 
   admin:
     tests:

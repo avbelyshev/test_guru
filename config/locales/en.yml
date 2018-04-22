@@ -12,6 +12,8 @@ en:
       answer:
         create: "Create Answer"
         update: "Update Answer"
+      feedback:
+        create: "Send"
     label:
       test:
         title: "Title"
@@ -34,6 +36,7 @@ en:
       logout: "Logout"
       signup: "Sign up"
       login: "Login"
+      feedback: "Feedback"
 
   tests:
     index:
@@ -63,6 +66,14 @@ en:
       failure: "An error occurred while saving gist"
 
   gist_description: "A question about %{test_title} from TestGuru"
+
+  feedbacks:
+    new:
+      header: "Send feedback"
+      back: "Back"
+    create:
+      success: "Message sent successfully"
+      failure: "Could not send message"
 
   admin:
     tests:

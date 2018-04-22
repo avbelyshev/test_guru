@@ -1,0 +1,6 @@
+<h1>Привет! Новый отзыв от пользователя Test-Guru</h1>
+
+<% user = @feedback.user %>
+<p>От: <%= "#{user.first_name} #{user.last_name} (#{user.email})" %></p>
+<p>Тема: <%= @feedback.title %></p>
+<p>Сообщение: <%= @feedback.body %></p>
