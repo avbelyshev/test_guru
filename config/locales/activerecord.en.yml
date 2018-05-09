@@ -6,6 +6,7 @@ en:
       answer: "Answer"
       category: "Category"
       feedback: "Feedback"
+      badge: "Badge"
 
     attributes:
       test:
@@ -20,6 +21,11 @@ en:
       feedback:
         title: "Title"
         body: "Body"
+      badge:
+        name: "Name"
+        image_file: "Image file"
+        rule_type: "Rule type"
+        rule_value: "Rule value"
 
     errors:
       messages:

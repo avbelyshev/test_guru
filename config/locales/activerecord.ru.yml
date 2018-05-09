@@ -6,6 +6,7 @@ ru:
       answer: "Ответ"
       category: "Категория"
       feedback: "Отзыв"
+      badge: "Бейдж"
 
     attributes:
       test:
@@ -20,6 +21,11 @@ ru:
       feedback:
         title: "Тема"
         body: "Сообщение"
+      badge:
+        name: "Название"
+        image_file: "Файл с изображением"
+        rule_type: "Тип правила"
+        rule_value: "Значение правила"
 
     errors:
       messages:

@@ -6,6 +6,8 @@
 
   <% if user_signed_in? && !current_user.admin? %>
     <%= link_to t('.feedback'), new_feedback_path, class: 'navbar-link'%>
+    <%= link_to t('.badges'), badges_path, class: 'navbar-link'%>
+    <%= link_to t('.user_badges'), user_badges_path, class: 'navbar-link'%>
   <% end %>
 
   <span class="navbar-text">
