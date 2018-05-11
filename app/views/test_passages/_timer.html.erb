@@ -1,0 +1,6 @@
+<%= content_tag :span,
+                '',
+                id: 'timer',
+                data: { start_time: @test_passage.created_at.to_i,
+                        passage_time: @test_passage.test.passage_time }
+%>

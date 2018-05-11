@@ -17,4 +17,8 @@ class Test < ApplicationRecord
   def self.tests_by_category(category)
     by_category(category).order(title: :desc).pluck(:title)
   end
+
+  def time_limit_present?
+    passage_time.present? && (passage_time > 0)
+  end
 end

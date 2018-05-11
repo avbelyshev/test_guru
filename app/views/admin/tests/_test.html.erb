@@ -5,6 +5,7 @@
   </td>
   <td class="text-center"><%= test_level(test) %></td>
   <td class="text-center"><%= test.questions.count %></td>
+  <td class="text-center"><%= test.passage_time %></td>
   <td class="text-center">
     <%= button_to t('.show'),
                   admin_test_path(test),

@@ -6,6 +6,10 @@
 
 <%= render 'progress_bar' %>
 
+<% if @test_passage.test.time_limit_present? %>
+  <p>Remaining time: <%= render 'timer' %></p>
+<% end %>
+
 <p>
   <b><%= @test_passage.current_question.body %></b>
 </p>

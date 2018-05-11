@@ -12,6 +12,7 @@ ru:
         title: "Название"
         level: "Уровень"
         category_id: "Категория"
+        passage_time: "Время прохождения"
       question:
         body: "Содержание"
       answer:
