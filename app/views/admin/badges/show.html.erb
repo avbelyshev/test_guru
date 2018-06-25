@@ -1,0 +1,19 @@
+<p>
+  <strong><%= t('activerecord.attributes.badge.name') %>:</strong>
+  <%= @badge.name %>
+</p>
+<p>
+  <strong><%= t('activerecord.attributes.badge.image_file') %>:</strong>
+  <%= @badge.image_file %>
+</p>
+<p>
+  <strong><%= t('activerecord.attributes.badge.rule_type') %>:</strong>
+  <%= @badge.rule_type %>
+</p>
+<p>
+  <strong><%= t('activerecord.attributes.badge.rule_value') %>:</strong>
+  <%= @badge.rule_value %>
+</p>
+
+<%= link_to t('.edit'), edit_admin_badge_path(@badge) %> |
+<%= link_to t('.back'), admin_badges_path %>
