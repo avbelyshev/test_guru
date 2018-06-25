@@ -59,7 +59,7 @@ ru:
 
   test_passages:
     result:
-      header: "Тест %{title} успешно завершён!"
+      header: "Тест %{title} завершён!"
       result: 'Результат'
       back: 'Назад'
       answers:
@@ -99,12 +99,14 @@ ru:
         title: "Название"
         level: "Уровень"
         questions: "Вопросов"
+        passage_time: "Время прохождения"
         actions: "Действия"
         new_test: "Создать тест"
       show:
         title: "Название"
         level: "Уровень"
         questions: "Вопросов"
+        passage_time: "Время прохождения"
         actions: "Действия"
         new_question: "Создать новый вопрос"
         edit: "Редактировать"

@@ -13,6 +13,7 @@ en:
         title: "Title"
         level: "Level"
         category_id: "Category"
+        passage_time: "Passage time"
       question:
         body: "Body"
       answer:

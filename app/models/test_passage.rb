@@ -33,6 +33,10 @@ class TestPassage < ApplicationRecord
     right_answers_percent >= SUCCESS_RATE
   end
 
+  def time_over?
+    (Time.now - created_at).to_i >= test.passage_time
+  end
+
   private
 
   def before_validation_set_current_question
