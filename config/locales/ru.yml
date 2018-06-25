@@ -14,6 +14,9 @@ ru:
         update: "Обновить Ответ"
       feedback:
         create: "Отправить"
+      badge:
+        create: "Создать Бейдж"
+        update: "Обновить Бейдж"
     label:
       test:
         title: "Название"
@@ -41,6 +44,8 @@ ru:
       signup: "Зарегистрироваться"
       login: "Войти"
       feedback: "Обратная связь"
+      badges: "Бейджы"
+      user_badges: "Мои бейджы"
 
   tests:
     index:
@@ -72,6 +77,8 @@ ru:
     gist:
       success: "Gist успешно сохранён, ссылка: %{gist_link}"
       failure: "Во время сохранения gist произошла ошибка"
+    update:
+      badge: "Вы получили новый бейдж!"
 
   gist_description: "Вопрос про %{test_title} от TestGuru"
 
@@ -164,12 +171,35 @@ ru:
         user: "Пользователь"
         url: "Ссылка"
 
+    badges:
+      create:
+        success: "Бейдж успешно создан"
+      index:
+        header: "Список бейджей"
+        new_badge: "Создать бейдж"
+        actions: "Действия"
+      show:
+        edit: "Редактировать"
+        back: "Назад"
+      new:
+        header: "Создать бейдж"
+        back: "Назад"
+      edit:
+        header: "Редактировать %{name} бейдж"
+        back: "Назад"
+      badge:
+        show: "Показать"
+        edit: "Редактировать"
+        delete: "Удалить"
+        delete_confirm: "Вы уверены?"
+
     header:
       header: "Панель администратора TestGuru"
       welcome: "Добро пожаловать"
       guru: "Гуру"
       logout: "Выйти"
       gists: "Список Gists"
+      badges: "Список бейджей"
 
   test_mailer:
     completed_test:

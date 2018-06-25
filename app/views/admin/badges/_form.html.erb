@@ -1,0 +1,27 @@
+<%= form_with model: [:admin, @badge], local: true do |form| %>
+  <%= render 'shared/errors', resource: @badge %>
+
+  <p>
+    <%= form.label :name %><br>
+    <%= form.text_field :name, id: :badge_name %>
+  </p>
+
+  <p>
+    <%= form.label :image_file %><br>
+    <%= form.text_field :image_file, id: :badge_image_file %>
+  </p>
+
+  <p>
+    <%= form.label :rule_type %>:<br>
+    <%= form.select :rule_type, options_for_select([['category', 'category'],
+                                                    ['attempt', 'attempt'],
+                                                    ['level', 'level']]) %>
+  </p>
+
+  <p>
+    <%= form.label :rule_value %><br>
+    <%= form.text_field :rule_value, id: :badge_rule_value %>
+  </p>
+
+  <p><%= form.submit %></p>
+<% end %>

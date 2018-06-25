@@ -1,0 +1,12 @@
+<table class="table table-bordered">
+  <thead class="thead-light" align="center">
+  <th><%= t('activerecord.attributes.badge.name') %></th>
+  <th><%= t('activerecord.attributes.badge.image_file') %></th>
+  <th><%= t('activerecord.attributes.badge.rule_type') %></th>
+  <th><%= t('activerecord.attributes.badge.rule_value') %></th>
+  </thead>
+
+  <tbody>
+  <%= render @badges %>
+  </tbody>
+</table>

@@ -13,6 +13,15 @@ class TestPassagesController < ApplicationController
     if @test_passage.completed?
       TestsMailer.completed_test(@test_passage).deliver_now
       redirect_to result_test_passage_path(@test_passage)
+
+      if @test_passage.passed_successfully?
+        @test_passage.update(passed: true)
+        @badges = BadgesReceiver.new(@test_passage).get_badges
+        if @badges.present?
+          current_user.badges.push(@badges)
+          flash[:notice] = t('.badge')
+        end
+      end
     else
       render :show
     end

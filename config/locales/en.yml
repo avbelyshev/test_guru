@@ -14,6 +14,9 @@ en:
         update: "Update Answer"
       feedback:
         create: "Send"
+      badge:
+        create: "Create Badge"
+        update: "Update Badge"
     label:
       test:
         title: "Title"
@@ -37,6 +40,8 @@ en:
       signup: "Sign up"
       login: "Login"
       feedback: "Feedback"
+      badges: "Badges"
+      user_badges: "My badges"
 
   tests:
     index:
@@ -64,6 +69,8 @@ en:
     gist:
       success: "Gist successfully saved, link: %{gist_link}"
       failure: "An error occurred while saving gist"
+    update:
+      badge: "You received a new badge!"
 
   gist_description: "A question about %{test_title} from TestGuru"
 
@@ -156,12 +163,35 @@ en:
         user: "User"
         url: "Url"
 
+    badges:
+      create:
+        success: "Badge was successfully created"
+      index:
+        header: "Badges list"
+        new_badge: "Create badge"
+        actions: "Actions"
+      show:
+        edit: "Edit"
+        back: "Back"
+      new:
+        header: "Create New Badge"
+        back: "Back"
+      edit:
+        header: "Edit %{name} badge"
+        back: "Back"
+      badge:
+        show: "Show"
+        edit: "Edit"
+        delete: "Delete"
+        delete_confirm: "Are you sure?"
+
     header:
       header: "TestGuru Admin Panel"
       welcome: "Welcome"
       guru: "Guru"
       logout: "Logout"
       gists: "Gists list"
+      badges: "Badges list"
 
   test_mailer:
     completed_test:
